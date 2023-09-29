@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plan page</title>
+
+    <!-- ========== COMMON STYLES ========== -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" >
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/animate-css/animate.min.css'%}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/lobipanel/lobipanel.min.css'%}" media="screen">
+
+    <!-- ========== PAGE STYLES ========== -->
+    <link rel="stylesheet" href="{% static 'css/prism/prism.css'%}" media="screen"> <!-- USED FOR DEMO HELP - YOU CAN REMOVE IT -->
+    <link rel="stylesheet" href="{% static 'css/toastr/toastr.min.css'%}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/icheck/skins/line/blue.css'%}">
+    <link rel="stylesheet" href="{% static 'css/icheck/skins/line/red.css'%}">
+    <link rel="stylesheet" href="{% static 'css/icheck/skins/line/green.css'%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-tour/bootstrap-tour.css'%}">
+
+    <!-- ========== THEME CSS ========== -->
+    <link rel="stylesheet" href="{% static 'css/main.css'%}" media="screen">
+
+    <!-- ========== MODERNIZR ========== -->
+    <script src="{% static 'js/modernizr/modernizr.min.js'%}"></script>
+</head>
+
+<body class="top-navbar-fixed">
+    <div class="main-wrapper">
+
+        <!-- ========== TOP NAVBAR ========== -->
+        <nav class="navbar top-navbar bg-white box-shadow">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header no-padding">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/del" alt="Jahid -Super Admin" class="logo">
+                        </a>
+                        <span class="small-nav-handle hidden-sm hidden-xs"><i class="fa fa-outdent"></i></span>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar-collapse-1" aria-expanded="false">
+
+                            <i class="fa fa-ellipsis-v"></i>
+                        </button>
+                        <button type="button" class="navbar-toggle mobile-nav-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
+                    <!-- /.navbar-header -->
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                            <li class="hidden-sm hidden-xs"><a href="#" class="user-info-handle"><i
+                                        class="fa fa-user"></i></a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#" class="full-screen-handle"><i
+                                        class="fa fa-arrows-alt"></i></a></li>
+                            
+                            <li class="hidden-xs hidden-xs">
+                                <!-- <a href="#">My Tasks</a> -->
+                            </li>
+                            
+                        </ul>
+            
+                        <!-- /.nav navbar-nav navbar-right -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- ========== WRAPPER FOR BOTH SIDEBARS & MAIN CONTENT ========== -->
+        <div class="content-wrapper">
+            <div class="content-container">
+
+                <!-- ========== LEFT SIDEBAR ========== -->
+                <div class="left-sidebar fixed-sidebar bg-navy-700 box-shadow tour-three">
+                    <div class="sidebar-content">
+                        <div class="user-info closed">
+                            <img src="http://placehold.it/90/c2c2c2?text=User" alt="Jahid"
+                                class="img-circle profile-img">
+                            <h6 class="title">Jahid</h6>
+                            <small class="info">Full Stack Developer <a href="/loginpage" class="color-danger text-center"><i class="fa fa-sign-out"></i>
+                                            Logout</a></small>
+                        </div>
+                        <!-- /.user-info -->
+
+                        <div class="sidebar-nav">
+                           <ul class="side-nav color-gray">
+                                <li class="nav-header">
+                                    <span class=""><i class="fa fa-fire" style="font: size larger 50px;"></i>Account Go</span>
+                                </li>
+                                <li>
+                                    <a href="/index1"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/manageusersuperadmin"><i class="fa fa-user"></i>
+                                        <span>User</span></a>
+                                </li>
+                                <li>
+                                    <a href="/manageplan"><i class="fa fa-shopping-cart"></i> <span>Plan</span></a>
+                                </li>
+                                <li>
+                                    <a href="/managecoupon"><i class="fa fa-gift"></i> <span>Coupon</span></a>
+
+                                </li> 
+                            </ul>
+                            <!-- /.side-nav -->
+                        </div>
+                        <!-- /.sidebar-nav -->
+                    </div>
+                    <!-- /.sidebar-content -->
+                </div>
+                <!-- /.left-sidebar -->
+
+                <div class="main-page">
+                    <div class="container-fluid">
+                        <div class="row page-title-div">
+                            <div class="col-md-6">
+                                <h2 class="title">Plan</h2>
+                                <p class="sub-title">Create Plan Details</p>
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <!-- /.col-md-6 text-right -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row breadcrumb-div">
+                            <div class="col-md-6">
+                                <ul class="breadcrumb">
+                                    <li><a href="/index1"><i class="fa fa-home"></i> Home</a></li>
+                                    <li><a href="/manageplan"><i class="fa fa-arrow-right"></i> Manage
+                                        Plan</a></li>
+                                    <li class="active">Plan</li>
+                                </ul>
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <!-- /.col-md-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container-fluid -->
+
+                    <section class="section">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <h5>Create New Plan</h5>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+
+                                            <form class="p-20" id="two-column" method="POST" action="/createnewplan/">
+                                            {% csrf_token %}
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Name <sup
+                                                                    class="color-danger">*</sup></label>
+                                                            <input type="text" class="form-control" name="planname"
+                                                                placeholder="Enter Plan Name"
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.col-md-6 -->
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Price <sup
+                                                                    class="color-danger">*</sup></label>
+                                                            <input type="text" class="form-control" name="planprice"
+                                                                placeholder="Enter Plan Price"
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.col-md-6 -->
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Duration <sup
+                                                                    class="color-danger">*</sup></label>
+                                                            <input type="text" class="form-control" name="planduration"
+                                                                placeholder="..."
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.col-md-6 -->
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Maximum Users <sup
+                                                                    class="color-danger">*</sup></label>
+                                                            <input type="number" class="form-control" name="maxiuser"
+                                                                
+                                                                required>
+                                                                <p><strong>Note:</strong>"-1" For Un-Limited</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.col-md-6 -->
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Maximum Customres <sup
+                                                                    class="color-danger">*</sup></label>
+                                                            <input type="number" class="form-control" name="maxicustomer"
+                                                                
+                                                                required>
+                                                                <p><strong>Note:</strong>"-1" For Un-Limited</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Maximum Vendors <sup
+                                                                    class="color-danger">*</sup></label>
+                                                            <input type="number" class="form-control" name="maxivendor"
+                                                                
+                                                                required>
+                                                                <p><strong>Note:</strong>"-1" For Un-Limited</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Description</label>
+                                                        <div class="col-sm-12">
+                                                            <textarea class="form-control" name="plandescription"
+                                                                rows="6"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <div class="row">
+                                                    
+                                                    <!-- /.col-md-12 -->
+
+                                                    <div class="col-md-9">
+
+
+                                                        <button type="submit" class="btn bg-primary btn-wide">Create</button>
+                                                        <button type="reset" class="btn btn-gray btn-wide">Cancel</button>
+
+                                                        <!-- /.btn-group -->
+                                                    </div>
+                                                    <!-- /.col-md-12 -->
+                                                </div>
+
+                                            </form>
+
+                                           
+                                            <!-- /.col-md-12 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.col-md-12 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </section>
+                    <!-- /.section -->
+
+                </div>
+            </div>
+            <!-- /.content-container -->
+        </div>
+        <!-- /.content-wrapper -->
+
+
+
+    </div>
+    <!-- /.main-wrapper -->
+
+    <!-- ========== COMMON JS FILES ========== -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js'%}"></script>
+    <script src="{% static 'js/jquery-ui/jquery-ui.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/pace/pace.min.js'%}"></script>
+    <script src="{% static 'js/lobipanel/lobipanel.min.js'%}"></script>
+    <script src="{% static 'js/iscroll/iscroll.js'%}"></script>
+
+    <!-- ========== PAGE JS FILES ========== -->
+     <script src="{% static 'js/prism/prism.js'%}"></script>
+    
+
+    <script src="{% static 'js/main.js'%}"></script>
+    <script>
+        $(function ($) {
+            $.validate({
+                form: '#two-column',
+                modules: 'security'
+            });
+        });
+    </script>
+
+    <!-- ========== ADD custom.js FILE BELOW WITH YOUR CHANGES ========== -->
+</body>
+
+<!-- Mirrored from Worksbot-admin.themesease.com/sidebar-navy.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 14:45:48 GMT -->
+
+</html>

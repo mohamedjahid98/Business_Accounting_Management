@@ -1,0 +1,21 @@
+from django.contrib import admin
+from . models import Mainpage,Registration,Adminregistration,Staffuser,Productservice,Managecustomer,Managevendor,Managebankaccount,Managebanktransfer,Invoice1,Managerevenue,Managecreditnotes,Bill,Managepayment,Managedebitnotes,Managesuperuser,Plan,Coupon
+
+admin.site.register(Mainpage)
+admin.site.register(Registration)
+admin.site.register(Adminregistration)
+admin.site.register(Staffuser)
+admin.site.register(Productservice)
+admin.site.register(Managecustomer)
+admin.site.register(Managevendor)
+admin.site.register(Managebankaccount)
+admin.site.register(Managebanktransfer)
+admin.site.register(Invoice1)
+admin.site.register(Managerevenue)
+admin.site.register(Managecreditnotes)
+admin.site.register(Bill)
+admin.site.register(Managepayment)
+admin.site.register(Managedebitnotes)
+admin.site.register(Managesuperuser)
+admin.site.register(Plan)
+admin.site.register(Coupon)
